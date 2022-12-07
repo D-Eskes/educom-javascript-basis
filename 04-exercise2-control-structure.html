@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Issue 4
+        </title>
+    </head>
+    <body>
+        <script>
+
+            const isEven = (number) => {
+                return (number % 2 == 0)
+            }
+
+            let i = 0
+            let sumEven = 0
+            while (i <= 100) {
+                if (isEven(i)) {
+                    sumEven = sumEven + i
+                }
+                i++
+            }
+
+            console.log(sumEven)
+
+
+        </script>
+    </body>
+</html>
