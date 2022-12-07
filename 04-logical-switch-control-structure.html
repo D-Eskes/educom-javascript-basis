@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Issue 4 </title>
+        <script>
+            const choice = 3
+            let msg = ""
+            
+            switch(true) {
+                case (choice < 1): {
+                    msg = "Make coffee!"
+                    break
+                }
+                case (choice > 2): {
+                    msg = "Make tea!"
+                    break
+                }
+                default: {
+                    msg = "Pour water!"
+                    break
+                }
+            }
+            
+            console.log(`Message: ${msg}`)
+
+            // here the case to be matched is 'true', there are 2 options and a default. The first option is
+            // choice < 1, which evaluates to false since choice = 3, therefore this case does not match with true.
+            // the second option is choice > 2, which evaluates to true as choice = 3. This case is matched since true
+            // was the input of the switch
+            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
