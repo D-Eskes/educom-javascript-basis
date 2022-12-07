@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Issue 6 </title>
+    </head>
+    <body>
+        <script>
+
+            const shoppingCart = [1.80, 2.60, 0.90, 0.90, 3.75, 0.45, 0.30, 10.00]
+            const tax = 1.21
+
+            const totalPrice = (shoppingCart) => {
+                let total = 0.00
+
+                shoppingCart.forEach((value, index, array) => {
+                    total += value
+                })
+
+                return (total)
+            }
+
+            let finalPrice = (totalPrice(shoppingCart) * tax).toFixed(2)
+            
+            console.log(`The final price is: ${finalPrice}`)
+
+
+        </script>
+    </body>
+</html>
