@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Issue 6
+        </title>
+    </head>
+    <body>
+        <script>
+
+            const myFunction = (value, index, array) => {
+                return value > 18
+            }
+            const numbers = [45, 4, 9, 16, 25]
+            const over18 = numbers.filter(myFunction)
+
+            const n = numbers.filter(value => value > 18)
+            console.log(over18, n)
+
+        </script>
+    </body>
+</html>

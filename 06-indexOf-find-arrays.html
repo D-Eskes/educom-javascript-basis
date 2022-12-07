@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Issue 6
+        </title>
+    </head>
+    <body>
+        <script>
+
+            const fruits = ["Apple", "Orange", "Apple", "Mango"]
+            const numbers = [4, 9, 16, 25, 29]
+
+            const findOver18 = (item) => {
+                return item > 18
+            }
+
+            const a = fruits.indexOf("Apple")
+            const b = fruits.lastIndexOf("Apple")
+
+            const c = numbers.find(findOver18)
+            const d = numbers.findIndex(findOver18)
+
+            console.log({a: a, b: b, c: c, d: d})
+
+        </script>
+    </body>
+</html>
