@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Issue 7
+        </title>
+    </head>
+    <body>
+        <script>
+
+            const car = {
+                brand: "Fiat",
+                type: "500",
+                color: "Red",
+                weight: 850
+            }
+
+            car.numberOfDoors = 2
+            console.log(car)
+
+            car.getColor = function() {
+                return (this.color)
+            }
+
+            console.log(car.getColor())
+            
+        </script>
+    </body>
+</html>
